@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Альфа-Банк — главная</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <div class="top-bar">
+    <div class="wrapper top-bar__inner">
+      <a class="top-bar__logo" href="#"><span class="logo-emblem"></span></a>
+      <button class="top-bar__burger" id="burgerBtn"><span></span><span></span><span></span></button>
+      <nav class="top-bar__nav" id="navMenu">
+        <a href="#" class="top-bar__link is-current">Частным лицам</a>
+        <a href="#" class="top-bar__link">Малому бизнесу и ИП</a>
+        <a href="#" class="top-bar__link">Среднему и крупному бизнесу</a>
+      </nav>
+      <div class="top-bar__actions">
+        <button class="top-bar__icon">🔍</button>
+        <button class="btn btn--light">Стать клиентом</button>
+        <button class="btn btn--red">Войти</button>
+      </div>
+    </div>
+  </div>
+
+  <section class="main-banner">
+    <div class="wrapper">
+      <div class="main-banner__grid">
+        <a href="#" class="card card--deposit">
+          <div class="deposit-content">
+            <h2 class="deposit-content__title">Альфа-Вклад</h2>
+            <p class="deposit-content__desc">Успейте получить 22% годовых —<br/>только до 31 мая</p>
+            <span class="btn btn--red deposit-content__btn">Открыть вклад</span>
+          </div>
+          <div class="deposit-percent"></div>
+        </a>
+        <a href="#" class="card card--credit"><h3 class="card__title">Кредитная карта</h3></a>
+        <a href="#" class="card card--invest"><h3 class="card__title">Инвестируйте<br/>и зарабатывайте</h3></a>
+        <a href="#" class="card card--cashloan"><h3 class="card__title-small">Кредит наличными</h3></a>
+        <a href="#" class="card card--freecard"><h3 class="card__title-small">Бесплатная<br/>Альфа-Карта</h3></a>
+      </div>
+    </div>
+  </section>
+
+  <section class="content-block content-block--white">
+    <div class="wrapper">
+      <div class="content-block__header">
+        <h2 class="content-block__title">Выбирайте лучшее</h2>
+        <div class="tab-group">
+          <button class="tab-group__item is-active">Для всех</button>
+          <button class="tab-group__item">Малому бизнесу</button>
+          <button class="tab-group__item">Крупному бизнесу</button>
+        </div>
+      </div>
+      <div class="product-grid">
+        <a href="#" class="product-card"><div><h3 class="product-card__title">Дебетовые карты</h3><p class="product-card__desc">Суперкэшбэк до 100%</p></div></a>
+        <a href="#" class="product-card"><div><h3 class="product-card__title">Кредитные карты</h3><p class="product-card__desc">Объединение долгов</p></div></a>
+        <a href="#" class="product-card"><div><h3 class="product-card__title">Кредиты</h3><p class="product-card__desc">Оформление онлайн</p></div></a>
+        <a href="#" class="product-card"><div><h3 class="product-card__title">Накопления</h3><p class="product-card__desc">Доход с первого месяца</p></div></a>
+        <a href="#" class="product-card"><div><h3 class="product-card__title">Инвестиции</h3><p class="product-card__desc">Начните зарабатывать</p></div></a>
+        <a href="#" class="product-card"><div><h3 class="product-card__title">Ипотека</h3><p class="product-card__desc">Одобрим за 60 секунд</p></div></a>
+        <a href="#" class="product-card"><div><h3 class="product-card__title">Alfa Only</h3><p class="product-card__desc">Ваш премиальный сервис</p></div></a>
+        <a href="#" class="product-card"><div><h3 class="product-card__title">Для детей и семьи</h3><p class="product-card__desc">Карта с кэшбэком</p></div></a>
+      </div>
+    </div>
+  </section>
+
+  <section class="cashback-block">
+    <div class="wrapper">
+      <div class="cashback-container">
+        <div class="cashback-container__text">
+          <h2 class="cashback-container__title">Наши клиенты получают<br/>повышенный кэшбэк<br/>у партнёров</h2>
+          <p class="cashback-container__desc">Каждый месяц мы собираем для вас выгодные предложения партнёров — скидки на продукты, одежду, технику, развлечения, образование и не только. Станьте клиентом и забирайте кэшбэк!</p>
+          <a href="#" class="btn btn--red cashback-container__btn">Стать клиентом</a>
+        </div>
+        <div class="phone-wrapper">
+          <div class="phone-chips">
+            <span class="phone-chips__item is-active">подбор</span>
+            <span class="phone-chips__item">по кредиткам</span>
+          </div>
+          <div class="phone-mockup">
+            <div class="phone-mockup__notch"></div>
+            <div class="phone-mockup__screen">
+              <h3 class="phone-mockup__title">Кэшбэк<br/>и сервисы</h3>
+              <div class="phone-mockup__balance"><span class="phone-mockup__label">Баланс</span><span class="phone-mockup__amount">5 678 ₽</span></div>
+              <div class="phone-mockup__art"></div>
+              <div class="phone-mockup__nav"><span></span><span></span><span></span><span></span><span></span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="content-block content-block--white">
+    <div class="wrapper">
+      <h2 class="content-block__title">Сервисы</h2>
+      <div class="service-grid">
+        <div class="service-card service-card--currency">
+          <div class="service-card__header">
+            <h3 class="service-card__title">Курсы валют</h3>
+            <div class="toggle-switch">
+              <button class="toggle-switch__item is-active">Наличные</button>
+              <button class="toggle-switch__item">Безналичные</button>
+            </div>
+          </div>
+          <table class="exchange-table">
+            <thead><tr><th>валюта</th><th>продать</th><th>купить</th></tr></thead>
+            <tbody>
+              <tr><td><span class="currency-flag currency-flag--us"></span><span><b>USD</b><small>Доллар США</small></span></td><td class="sell-usd">76,1</td><td class="buy-usd">74,9</td></tr>
+              <tr><td><span class="currency-flag currency-flag--eu"></span><span><b>EUR</b><small>Евро</small></span></td><td class="sell-eur">91</td><td class="buy-eur">10,6</td></tr>
+              <tr><td><span class="currency-flag currency-flag--cn"></span><span><b>CNY</b><small>Китайский юань (CNY)</small></span></td><td class="sell-cny">11,1</td><td class="buy-cny">11,4</td></tr>
+            </tbody>
+           </table>
+          <a href="#" class="service-card__link">Больше валют →</a>
+          <p class="service-card__note">Информация о курсах обмена иностранных валют, размещенная на сайте, не является публичной офертой.</p>
+        </div>
+        <a href="#" class="service-card service-card--row"><div><h4 class="service-card__subtitle">Отделения банка и банкоматы</h4><p class="service-card__desc">Найдите ближайшие к вам отделения и банкоматы</p></div><span class="service-card__icon"></span></a>
+        <a href="#" class="service-card service-card--row"><div><h4 class="service-card__subtitle">Платежи и переводы</h4><p class="service-card__desc">Оплачивайте и переводите деньги без комиссии</p></div><span class="service-card__icon"></span></a>
+        <a href="#" class="service-card service-card--row"><div><h4 class="service-card__subtitle">Купить или продать недвижимость</h4><p class="service-card__desc">Сделка под ключ, быстро и безопасно</p></div><span class="service-card__icon"></span></a>
+        <a href="#" class="service-card service-card--support"><div><h4 class="service-card__subtitle">Поддержка</h4><p class="service-card__desc">Любой вопрос решит наш робот или оператор</p></div><span class="service-card__icon"></span></a>
+        <a href="#" class="service-card service-card--tax"><div><h4 class="service-card__subtitle">Оформить самозанятость</h4><p class="service-card__desc service-card__desc--light">Доходы, налоги и выгоды в одном приложении</p></div><span class="service-card__icon"></span></a>
+      </div>
+    </div>
+  </section>
+
+  <section class="content-block content-block--white">
+    <div class="wrapper">
+      <h2 class="content-block__title">Пользуйтесь выгодными<br/>предложениями в наших сервисах</h2>
+      <div class="tab-group tab-group--offers">
+        <button class="tab-group__item is-active"><span class="tab-dot tab-dot--red"></span>Альфа-Мобайл</button>
+        <button class="tab-group__item"><span class="tab-dot tab-dot--orange"></span>Альфа-Тревел</button>
+        <button class="tab-group__item"><span class="tab-dot tab-dot--green"></span>Афиша</button>
+        <button class="tab-group__item"><span class="tab-dot tab-dot--orange"></span>Заправки</button>
+        <button class="tab-group__item"><span class="tab-dot tab-dot--green"></span>Подарки</button>
+        <button class="tab-group__item"><span class="tab-dot tab-dot--red"></span>Страхование</button>
+      </div>
+      <div class="offer-grid">
+        <a href="#" class="offer-card offer-card--sim">
+          <div><h3 class="offer-card__title">Альфа-выгодная связь</h3><p class="offer-card__desc">12 ГБ, 500 мин — за 350₽</p></div>
+          <div class="offer-card__art"></div>
+        </a>
+        <a href="#" class="offer-card offer-card--internet">
+          <div><h3 class="offer-card__title">Безлимитный интернет</h3><p class="offer-card__desc">Бесплатно и навсегда с тарифом «Лайт»</p></div>
+          <div class="offer-card__art"></div>
+        </a>
+        <a href="#" class="offer-card offer-card--cta"><span>Оформить сим</span><span class="offer-card__arrow">→</span></a>
+      </div>
+    </div>
+  </section>
+
+  <section class="content-block content-block--white about-section">
+    <div class="wrapper">
+      <div class="content-block__header">
+        <h2 class="content-block__title">О банке</h2>
+        <div class="tab-group">
+          <button class="tab-group__item is-active">Достижения</button>
+          <button class="tab-group__item">Работа в Альфе</button>
+        </div>
+      </div>
+      <div class="about-grid">
+        <a href="#" class="about-card about-card--employer">
+          <h3 class="about-card__title">Альфа-Банк — лучший работодатель России</h3>
+          <p class="about-card__desc about-card__desc--light">Третий год подряд по версии HeadHunter</p>
+        </a>
+        <a href="#" class="about-card">
+          <h3 class="about-card__title">Крупнейший частный банк</h3>
+          <ul class="about-stats"><li><b>19 миллионов</b><span>клиентов на обслуживании</span></li><li><b>800+</b><span>офисов и доставка</span></li><li><b>в 2500</b><span>городов</span></li></ul>
+        </a>
+        <a href="#" class="about-card">
+          <h3 class="about-card__title">Отзывы</h3>
+          <p class="about-card__desc">Мы ценим время клиентов и каждый день стремимся стать лучше</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
