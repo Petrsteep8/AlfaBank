@@ -1,19 +1,7 @@
-*, *::before, *::after {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
 html {
   scroll-behavior: smooth;
 }
-body {
-  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-  font-size: 16px;
-  line-height: 1.4;
-  color: rgb(10, 10, 10);
-  background: rgb(243, 244, 245);
-  min-width: 320px;
-}
+
 a {
   color: inherit;
   text-decoration: none;
@@ -31,6 +19,15 @@ ul {
 img, svg {
   display: block;
   max-width: 100%;
+}
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-size: 16px;
+  line-height: 1.4;
+  color: rgb(10, 10, 10);
+  background: rgb(243, 244, 245);
+  min-width: 320px;
 }
 
 .wrapper {
@@ -82,6 +79,12 @@ img, svg {
   flex-wrap: wrap;
   gap: 16px;
   margin-bottom: 24px;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 .btn {
@@ -336,7 +339,6 @@ img, svg {
   width: 60%;
   max-width: 540px;
   z-index: 1;
-  background-image: url('https://alfabank.servicecdn.ru/site-upload/ab/d0/1449/D_CardPure_558x444_200126.png');
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -914,7 +916,6 @@ img, svg {
   .offer-card__desc { max-width: 70%; }
 }
 
-
 .about-section {
   padding-bottom: 80px;
 }
@@ -1002,4 +1003,130 @@ img, svg {
 @media (max-width: 600px) {
   .about-card { padding: 22px; }
   .about-card__title { font-size: 18px; }
+}
+
+
+.popup-menu {
+  position: fixed;
+  top: 70px;
+  left: 0;
+  right: 0;
+  background: rgb(10, 10, 10);
+  z-index: 1001;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.2s ease;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.3);
+}
+
+.popup-menu.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+.popup-menu__wrapper {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 32px 24px;
+  display: flex;
+  gap: 48px;
+}
+
+.popup-menu__left {
+  width: 240px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  border-right: 1px solid rgba(255, 255, 255, 0.1);
+  padding-right: 24px;
+}
+
+.popup-menu__category {
+  background: none;
+  border: none;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 16px;
+  font-weight: 500;
+  text-align: left;
+  cursor: pointer;
+  padding: 10px 0;
+  transition: all 0.2s ease;
+  font-family: inherit;
+}
+
+.popup-menu__category:hover {
+  color: rgb(255, 255, 255);
+}
+
+.popup-menu__category.active {
+  color: rgb(239, 49, 36);
+}
+
+.popup-menu__right {
+  flex: 1;
+  display: flex;
+  gap: 32px;
+  flex-wrap: wrap;
+}
+
+.popup-menu__block {
+  min-width: 200px;
+}
+
+.popup-menu__block-title {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 13px;
+  font-weight: 600;
+  margin-bottom: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.popup-menu__link {
+  display: block;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 14px;
+  padding: 6px 0;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.popup-menu__link:hover {
+  color: rgb(239, 49, 36);
+}
+
+.popup-menu__placeholder {
+  color: rgba(255, 255, 255, 0.4);
+  font-size: 14px;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.dark-layer {
+  position: fixed;
+  top: 70px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 1000;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.2s ease;
+  backdrop-filter: blur(4px);
+}
+
+.dark-layer.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+@media (max-width: 900px) {
+  .popup-menu {
+    display: none;
+  }
+  .dark-layer {
+    display: none;
+  }
 }

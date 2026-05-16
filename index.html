@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Альфа-Банк — главная</title>
+  <title>Альфа-Банк</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
@@ -16,9 +16,9 @@
       <a class="top-bar__logo" href="#"><span class="logo-emblem"></span></a>
       <button class="top-bar__burger" id="burgerBtn"><span></span><span></span><span></span></button>
       <nav class="top-bar__nav" id="navMenu">
-        <a href="#" class="top-bar__link is-current">Частным лицам</a>
-        <a href="#" class="top-bar__link">Малому бизнесу и ИП</a>
-        <a href="#" class="top-bar__link">Среднему и крупному бизнесу</a>
+        <a href="#" class="top-bar__link is-current" data-type="for-people">Частным лицам</a>
+        <a href="#" class="top-bar__link" data-type="for-business">Малому бизнесу и ИП</a>
+        <a href="#" class="top-bar__link" data-type="for-corporate">Среднему и крупному бизнесу</a>
       </nav>
       <div class="top-bar__actions">
         <button class="top-bar__icon">🔍</button>
@@ -181,5 +181,6 @@
   </section>
 
   <script src="js/main.js"></script>
+  <script src="js/navigation.js"></script>
 </body>
 </html>
